@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/darker_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:elevation="4dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtTicketEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Event Name"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/txtTicketDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date: "
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/txtTicketLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location: "
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/txtTicketPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price: $0.00"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/imgQrCode"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:contentDescription="QR Code"/>
+
+    </LinearLayout>
+
+</LinearLayout>

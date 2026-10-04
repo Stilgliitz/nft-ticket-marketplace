@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    android:padding="24dp">
+
+
+    <TextView
+        android:id="@+id/txtLinkWalletTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Link Your Wallet"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/edtWalletAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your wallet address (0x...)"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="@android:color/white"
+        android:textColorHint="#777777"
+        android:inputType="text"/>
+
+
+    <Switch
+        android:id="@+id/switchExistingWallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Is this an existing wallet?"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="24dp"
+        android:padding="8dp"/>
+
+    <Button
+        android:id="@+id/btnSaveWallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Link Wallet"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/purple_700"
+        android:layout_marginTop="24dp"
+        android:padding="12dp"/>
+
+
+    <TextView
+        android:id="@+id/txtWalletStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wallet Status: Not Linked"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="32dp"/>
+
+
+    <ProgressBar
+        android:id="@+id/progressWalletLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:indeterminate="true"/>
+
+</LinearLayout>

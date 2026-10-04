@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E2534"
+    android:padding="16dp"
+    tools:context=".SellNTransfer">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabsSellTransfer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tabGravity="fill"
+        app:tabMode="fixed">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabSell"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="SELL" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabTransfer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TRANSFER"/>
+    </com.google.android.material.tabs.TabLayout>
+
+     <LinearLayout
+        android:id="@+id/layoutSellSection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/tabsSellTransfer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/edtSellTicketId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Ticket ID..."
+            android:textColorHint="@color/white"
+            android:textColor="@android:color/white"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/edtSellWalletAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Wallet Address..."
+            android:textColorHint="@color/white"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/edtSellOwnerId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Owner ID..,"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/white"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/edtSellPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Price..."
+            android:textColorHint="@color/white"
+            android:inputType="numberDecimal"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btnSellVerifyTicket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verify Ticket"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btnConfirmSellTicket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sell Ticket"
+            android:backgroundTint="@color/white"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"
+            android:enabled="false"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutTransferSection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/tabsSellTransfer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/txtTransferNotice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verify Your Ticket Before Transfer"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/edtTransferTicketId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/white"
+            android:hint="Enter Your Ticket ID..."
+            android:padding="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/edtTransferOwnerId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/white"
+            android:hint="Enter Your Owner ID..."
+            android:padding="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/edtTransferWalletAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:hint="Enter Your Wallet Address..."
+            android:textColorHint="@color/white"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btnVerifyTransferTicket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verify Ownership"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:layout_marginTop="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#555"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/edtBuyerEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Buyer's Email..."
+            android:textColorHint="@color/white"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:enabled="false"/>
+
+        <EditText
+            android:id="@+id/edtBuyerWalletAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Buyer's Wallet Address..."
+            android:textColorHint="@color/white"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/btnConfirmTransferTicket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transfer Ticket"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"
+            android:enabled="false"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

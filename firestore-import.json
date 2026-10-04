@@ -1,0 +1,104 @@
+{
+  "Events": {
+    "event0": {
+      "Name": "Wired Festival",
+      "Date": "2025-07-10",
+      "Location": "London, UK",
+      "price": 120,
+      "sellerID": "SLR_48921",
+      "ticketID": "TKT_XK12093",
+      "Image": "https://example.com/images/wired-festival.jpg",
+      "artist": "Lil Durk"
+    },
+    "event1": {
+      "Name": "Rolling Hype",
+      "Date": "2025-08-15",
+      "Location": "Miami, FL",
+      "price": 150,
+      "sellerID": "SLR_59201",
+      "ticketID": "TKT_XK12094",
+      "Image": "https://example.com/images/rolling-hype.jpg",
+      "artist": "Bad Bunny"
+    },
+    "event2": {
+      "Name": "SwiftSound",
+      "Date": "2025-09-05",
+      "Location": "New York, NY",
+      "price": 200,
+      "sellerID": "SLR_38471",
+      "ticketID": "TKT_XK12095",
+      "Image": "https://example.com/images/swiftsound.jpg",
+      "artist": "Taylor Swift"
+    },
+    "event3": {
+      "Name": "NBA Finals Game 3",
+      "Date": "2025-06-12",
+      "Location": "San Francisco, CA",
+      "price": 300,
+      "sellerID": "SLR_67293",
+      "ticketID": "TKT_XK12096",
+      "Image": "https://example.com/images/nba-finals.jpg",
+      "teams": "Golden State Soldiers vs. Miami Heatwave"
+    },
+    "event4": {
+      "Name": "NFL Championship",
+      "Date": "2025-02-10",
+      "Location": "Los Angeles, CA",
+      "price": 250,
+      "sellerID": "SLR_56182",
+      "ticketID": "TKT_XK12097",
+      "Image": "https://example.com/images/nfl-championship.jpg",
+      "teams": "LA Thunders vs. New York Titans"
+    },
+    "event5": {
+      "Name": "Ultra Bass Rave",
+      "Date": "2025-11-22",
+      "Location": "Amsterdam, Netherlands",
+      "price": 90,
+      "sellerID": "SLR_44921",
+      "ticketID": "TKT_XK12098",
+      "Image": "https://example.com/images/ultra-bass.jpg",
+      "artist": "DJ Nova"
+    },
+    "event6": {
+      "Name": "Summer Beats Festival",
+      "Date": "2025-06-30",
+      "Location": "Houston, TX",
+      "price": 140,
+      "sellerID": "SLR_78231",
+      "ticketID": "TKT_XK12099",
+      "Image": "https://example.com/images/summer-beats.jpg",
+      "artist": "Youngboy Never Broken"
+    },
+    "event7": {
+      "Name": "Electric Pulse Rave",
+      "Date": "2025-12-31",
+      "Location": "Berlin, Germany",
+      "price": 110,
+      "sellerID": "SLR_66192",
+      "ticketID": "TKT_XK12100",
+      "Image": "https://example.com/images/electric-pulse.jpg",
+      "artist": "DJ Voltage"
+    },
+    "event8": {
+      "Name": "World Cup Finals",
+      "Date": "2025-07-18",
+      "Location": "Doha, Qatar",
+      "price": 500,
+      "sellerID": "SLR_33921",
+      "ticketID": "TKT_XK12101",
+      "Image": "https://example.com/images/world-cup.jpg",
+      "teams": "Brazil vs. France"
+    },
+    "event9": {
+      "Name": "RockFury Festival",
+      "Date": "2025-08-22",
+      "Location": "Seattle, WA",
+      "price": 130,
+      "sellerID": "SLR_88231",
+      "ticketID": "TKT_XK12102",
+      "Image": "https://example.com/images/rockfury.jpg",
+      "artist": "Imagine Skies"
+    }
+  }
+}

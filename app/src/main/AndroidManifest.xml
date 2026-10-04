@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ticketapp"
+        tools:replace="android:dataExtractionRules"
+        tools:targetApi="31">
+        <activity
+            android:name=".TermsAndConditions"
+            android:exported="false"/>
+        <activity
+            android:name=".Loading"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Payment2"
+            android:exported="false"/>
+        <activity
+            android:name=".Marketplace"
+            android:exported="false"/>
+        <activity
+            android:name=".MyTickets"
+            android:exported="false"/>
+        <activity
+            android:name=".LinkWallet"
+            android:exported="false"/>
+        <activity
+            android:name=".ViewTicket"
+            android:exported="false"
+            android:theme="@style/Theme.Ticketapp"/>
+        <activity
+            android:name=".EventTicket"
+            android:exported="false"/>
+        <activity
+            android:name=".Ticket"
+            android:exported="false"/>
+        <activity
+            android:name=".Confirmation"
+            android:exported="false"/>
+        <activity
+            android:name=".Payment"
+            android:exported="false"/>
+        <activity
+            android:name=".Verify"
+            android:exported="false"/>
+        <activity
+            android:name=".SellNTransfer"
+            android:exported="false"/>
+        <activity
+            android:name=".Profile"
+            android:exported="false"/>
+        <activity
+            android:name=".Account"
+            android:exported="false"/>
+        <activity
+            android:name=".Settings"
+            android:exported="false"/>
+        <activity
+            android:name=".Register"
+            android:exported="false"/>
+        <activity
+            android:name=".Login"
+            android:exported="false"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"/>
+    </application>
+
+</manifest>
